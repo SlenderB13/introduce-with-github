@@ -1,14 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import UserProvider from './contexts/UserProvider'
 import Home from './Home'
-import AppContext from './context/AppContext'
 import './index.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <AppContext>
+    <UserProvider>
       <Home />
-    </AppContext>
+    </UserProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )
