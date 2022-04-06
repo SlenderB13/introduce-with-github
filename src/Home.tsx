@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className="h-screen flex flex-col justify-center items-center bg-erie-black">
       <img src={spaceSVG} alt="person with phone"
-      className="absolute z-0 left-10 -bottom-10 pointer-events-none" />
+      className="absolute z-0 left-10 -bottom-10 pointer-events-none w-3/4 md:w-1/2" />
       {user ? <User></User> : <Form></Form>}
     </div>
   )
