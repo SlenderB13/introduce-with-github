@@ -11,8 +11,12 @@ const UserProvider: React.FC = ({children}) => {
         setUser(res)
     }
 
+    const clearUser = () => {
+        setUser(null)
+    }
+
     return (
-        <UserContext.Provider value={{ user, fetchData }}>
+        <UserContext.Provider value={{ user, fetchData, clearUser }}>
             {children}
         </UserContext.Provider>
     )
